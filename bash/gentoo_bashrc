@@ -1,0 +1,7 @@
+alias emerge-world='sudo emerge -avDuN world'
+alias emerge-sync='sudo emerge --sync && sudo layman -S'
+alias emerge-rebuild='sudo revdep-rebuild'
+alias emerge-clean='sudo emerge --depclean'
+alias emerge-all='emerge-sync && emerge-world && emerge-clean && emerge-rebuild'
+alias make-kernel='sudo genkernel --menuconfig --install --lvm --luks all --kernel-config=/usr/share/genkernel/kernel-config && sudo grub2-mkconfig -o /boot/grub/grub.cfg'
+alias make-modules='sudo emerge nvidia-drivers virtualbox-modules'

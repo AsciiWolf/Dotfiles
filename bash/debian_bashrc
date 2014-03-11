@@ -1,0 +1,7 @@
+alias apt-update='sudo apt-get update'
+alias apt-upgrade='sudo apt-get dist-upgrade'
+alias apt-autoremove='sudo apt-get autoremove --purge'
+alias apt-clean='sudo apt-get clean'
+alias apt-install='sudo apt-get install'
+alias apt-remove='sudo apt-get remove --purge'
+alias apt-all='apt-update && apt-upgrade && apt-autoremove && apt-clean'
