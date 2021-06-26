@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-socat stdout udp-listen:65535 | dsdccx -T3 -i - -fa -o - | play -q -t s16 -r 8k -c 1 -
+nc -l -u 7355 | dsdccx -T3 -i - -fa -o - | play -q -t s16 -r 8k -c 1 -
